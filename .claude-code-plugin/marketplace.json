@@ -1,0 +1,19 @@
+{
+    "name": "ry",
+    "description": "A collection of useful plugins for Claude Code CLI, focusing on translation and text processing capabilities.",
+    "owner": {
+        "name": "RY"
+    },
+    "plugins": [
+        {
+            "name": "to-ch",
+            "source": "./plugins/translation/to-ch.md",
+            "description": "將文字翻譯成中文"
+        },
+        {
+            "name": "to-en",
+            "source": "./plugins/translation/to-en.md",
+            "description": "將文字翻譯成英文"
+        }
+    ]
+}
