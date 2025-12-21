@@ -1,0 +1,17 @@
+{
+    "name": "ry-plugins",
+    "version": "1.0.0",
+    "description": "Claude Code Plugin Collection",
+    "commands": [
+        {
+            "name": "to-ch",
+            "description": "將文字翻譯成中文",
+            "prompt": "commands/to-ch.md"
+        },
+        {
+            "name": "to-eng",
+            "description": "將文字翻譯成英文",
+            "prompt": "commands/to-eng.md"
+        }
+    ]
+}
