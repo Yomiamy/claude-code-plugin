@@ -9,9 +9,9 @@
             "prompt": "commands/to-ch.md"
         },
         {
-            "name": "to-eng",
+            "name": "to-en",
             "description": "將文字翻譯成英文",
-            "prompt": "commands/to-eng.md"
+            "prompt": "commands/to-en.md"
         }
     ]
 }

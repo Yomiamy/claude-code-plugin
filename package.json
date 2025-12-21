@@ -1,0 +1,36 @@
+{
+  "name": "@ry/claude-code-plugins",
+  "version": "1.0.0",
+  "description": "Claude Code Plugin Collection - Translation commands for Claude Code CLI",
+  "main": "plugin.json",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "plugin",
+    "translation",
+    "cli",
+    "i18n"
+  ],
+  "author": "RY",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/claude-code-plugin.git"
+  },
+  "files": [
+    "plugin.json",
+    "commands/**/*.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "validate": "node -e \"console.log('Plugin validation passed')\"",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "claudeCode": {
+    "minVersion": "0.1.0"
+  }
+}

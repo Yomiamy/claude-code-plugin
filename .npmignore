@@ -1,0 +1,30 @@
+# Development files
+.git/
+.github/
+.vscode/
+.idea/
+
+# Test files
+test/
+tests/
+*.test.js
+*.spec.js
+
+# CI/CD
+.travis.yml
+.gitlab-ci.yml
+.circleci/
+
+# Documentation (source)
+docs/
+*.draft.md
+
+# Build tools
+.editorconfig
+.eslintrc*
+.prettierrc*
+tsconfig.json
+
+# Misc
+.DS_Store
+*.log
