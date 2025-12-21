@@ -6,14 +6,9 @@
     },
     "plugins": [
         {
-            "name": "to-ch",
-            "source": "./plugins/translation/to-ch.md",
-            "description": "將文字翻譯成中文"
-        },
-        {
-            "name": "to-en",
-            "source": "./plugins/translation/to-en.md",
-            "description": "將文字翻譯成英文"
+            "name": "trans",
+            "source": "./plugins/translation",
+            "description": "將翻譯文字服務"
         }
     ]
 }
