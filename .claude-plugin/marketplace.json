@@ -8,7 +8,7 @@
         {
             "name": "trans",
             "source": "./plugins/translation",
-            "description": "將翻譯文字服務"
+            "description": "翻譯文字服務"
         }
     ]
 }
