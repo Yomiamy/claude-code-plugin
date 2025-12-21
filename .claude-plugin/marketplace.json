@@ -6,7 +6,7 @@
     },
     "plugins": [
         {
-            "name": "trans",
+            "name": "translation",
             "source": "./plugins/translation",
             "description": "翻譯文字服務"
         }
