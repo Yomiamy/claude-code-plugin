@@ -11,6 +11,9 @@ A collection of useful plugins for Claude Code CLI, focusing on translation and 
 
 Both commands maintain technical terminology accuracy during translation.
 
+### Math Commands
+- **`/abs`** - 計算數值的絕對值。若輸入不是數字，則回報錯誤訊息。
+
 ## Installation
 
 ### Local Installation
@@ -33,6 +36,28 @@ claude plugin add @ry/claude-code-plugins
 ```
 
 ## Usage
+
+### 取絕對值（/abs 指令）
+
+```bash
+claude /abs "-15"
+```
+
+Output:
+```
+15
+```
+
+如果輸入非數字：
+
+```bash
+claude /abs "hello"
+```
+
+Output:
+```
+請輸入數值
+```
 
 ### Translate to Chinese
 
@@ -60,15 +85,24 @@ This is a test message containing technical terminology.
 
 ```
 claude-code-plugin/
-├── plugin.json          # Plugin configuration
-├── commands/            # Command definitions
-│   ├── to-ch.md        # Chinese translation prompt
-│   └── to-en.md        # English translation prompt
-├── package.json         # NPM package configuration
-├── README.md           # This file
-├── LICENSE             # MIT License
-├── .gitignore          # Git ignore rules
-└── .npmignore          # NPM ignore rules
+├── plugin.json                  # Plugin configuration
+├── plugins/
+│   ├── math/
+│   │   ├── .claude-plugin/
+│   │   │   └── plugin.json      # math plugin 設定檔
+│   │   └── commands/
+│   │       └── abs.md           # abs（絕對值）指令 prompt
+│   └── translation/
+│       ├── .claude-plugin/
+│       │   └── plugin.json
+│       └── commands/
+│           ├── to-ch.md        # Chinese translation prompt
+│           └── to-en.md        # English translation prompt
+├── package.json                 # NPM package configuration
+├── README.md                   # This file
+├── LICENSE                     # MIT License
+├── .gitignore                  # Git ignore rules
+└── .npmignore                  # NPM ignore rules
 ```
 
 ## Development
@@ -124,6 +158,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 RY
 
 ## Changelog
+
+### v1.0.1 (2025-12-28)
+- 新增 Math 指令 `/abs`
 
 ### v1.0.0 (2025-12-21)
 - Initial release
