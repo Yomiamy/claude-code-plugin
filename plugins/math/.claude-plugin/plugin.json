@@ -1,0 +1,8 @@
+{
+    "name": "math",
+    "description": "math service",
+    "version": "1.0.0",
+    "author": {
+      "name": "RY"
+    }
+  }
