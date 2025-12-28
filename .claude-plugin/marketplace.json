@@ -9,6 +9,11 @@
             "name": "translation",
             "source": "./plugins/translation",
             "description": "翻譯文字服務"
+        },
+        {
+            "name": "math",
+            "source": "./plugins/math",
+            "description": "數學運算服務"
         }
     ]
 }
